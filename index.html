@@ -10,50 +10,62 @@
 <!-- Title of the page -->
 <h1>SmartGroceries</h1>
 
-<!-- Tab links, each one with an onclick event associated with it -->
+<!-- Tab links, each one with an onclick event associated with it 
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
   <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-</div>
+</div>-->
 
 <!-- Tab content -->
-<div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-  <p>Choose all categories applicable:</p>
-	<input id="vegsel" type="checkbox">
-		<label>Vegetarian</label><br>	
-	</input>
-	<input id="glusel" type="checkbox">
-		<label>GlutenFree</label><br><br>	
-	</input>
-	<button onclick="populateListProductChoices('vegsel', 'glusel', 'displayProduct')">Apply</button>
+<div id="Client" class="tabcontentmain">
+  <h3>Welcome to SmartGroceries!</h3>
+  <p>To show you items according to your preferences, please awser the questions below:</p><br>
 	
-	<!--
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
-	</select> 
-	-->
+	<label>Are you vegeterian?</label>
+	<input type="radio" name="vegsel" id="vegsel"><label>Yes</label></input>
+	<input type="radio" name="vegsel"><label>No</label></input>
+	<br><br>
+	
+	<label>Are you allergic to gluten?</label>
+	<input type="radio" name="glusel" id="glusel"><label>Yes</label></input>
+	<input type="radio" name="glusel"><label>No</label></input>
+	<br><br>
+	
+	
+	<label>Do you prefer to be shown only organic products?</label>
+	<input type="radio" name="orgsel" id="orgsel"><label>Yes</label></input>
+	<input type="radio" name="orgsel"><label>No</label></input>
+	<br><br><br>
+	
+	<button onclick="populateListProductChoices('vegsel', 'glusel', 'orgsel', 'displayFav', 'displayMeat', 'displayDiary', 'displayFrozenFood', 'displayPastry')">Next</button>
+	
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
+  <p>We preselected products based on your preferences.</p>
 	 Choose items to buy:
-	 <div id="displayProduct"></div>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		Add selected items to cart.
-	</button>
+	 <br><br><br><button onClick="fav()">Fruits and Vegetables</button><br><br>
+	 <div id="displayFav" class="category"></div>
+	 <br><button onClick="meat()">Meat</button><br><br>
+	 <div id="displayMeat" class="category"></div>
+	 <br><button onClick="diary()">Diary</button><br><br>
+	 <div id="displayDiary" class="category"></div>
+	 <br><button onClick="frozenFood()">Frozen Food</button><br><br>
+	 <div id="displayFrozenFood" class="category"></div>
+	 <br><button onClick="pastry()">Pastry</button><br><br>
+	 <div id="displayPastry" class="category"></div><br><br>
+	 <button id="addCart" type="button" class="block" onclick="start()">Previous</button>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">Next</button>
 </div>
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
-  <p>Here is your cart.</p>
-  <div id="displayCart"></div>
+  <p>Here is the content of your cart.</p>
+  <div id="displayCart"></div><br>
+  <button id="addCart" type="button" class="block" onclick="backToProducts()">Previous</button>
+  <button id="addCart" type="button" class="block" >Proceed to checkout</button>
 </div>
 
 <h3 class="footer">Website designed by Felix Meunier</h3>
