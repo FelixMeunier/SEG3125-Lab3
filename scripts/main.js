@@ -111,7 +111,7 @@ function populateListProductChoices(slct0, slct1, slct2, slct3, slct4, slct5, sl
 			
 			// create an image for the checkbox, and also add in HTML DOM
 			var img = document.createElement('img')
-			img.src = "D:/GitHub/SEG3125-Lab3/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
+			img.src = "https://github.com/FelixMeunier/SEG3125-Lab3/blob/master/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
 			s3.appendChild(img);
 			
 			// create 2 breakline nodes and add in HTML DOM
@@ -154,7 +154,7 @@ function populateListProductChoices(slct0, slct1, slct2, slct3, slct4, slct5, sl
 			
 			// create an image for the checkbox, and also add in HTML DOM
 			var img = document.createElement('img')
-			img.src = "D:/GitHub/SEG3125-Lab3/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
+			img.src = "https://github.com/FelixMeunier/SEG3125-Lab3/blob/master/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
 			s4.appendChild(img);
 			
 			// create 2 breakline nodes and add in HTML DOM
@@ -198,7 +198,7 @@ function populateListProductChoices(slct0, slct1, slct2, slct3, slct4, slct5, sl
 			
 			// create an image for the checkbox, and also add in HTML DOM
 			var img = document.createElement('img')
-			img.src = "D:/GitHub/SEG3125-Lab3/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
+			img.src = "https://github.com/FelixMeunier/SEG3125-Lab3/blob/master/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
 			s5.appendChild(img);
 			
 			// create 2 breakline nodes and add in HTML DOM
@@ -241,7 +241,7 @@ function populateListProductChoices(slct0, slct1, slct2, slct3, slct4, slct5, sl
 			
 			// create an image for the checkbox, and also add in HTML DOM
 			var img = document.createElement('img')
-			img.src = "D:/GitHub/SEG3125-Lab3/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
+			img.src = "https://github.com/FelixMeunier/SEG3125-Lab3/blob/master/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
 			s6.appendChild(img);
 			
 			// create 2 breakline nodes and add in HTML DOM
@@ -284,7 +284,7 @@ function populateListProductChoices(slct0, slct1, slct2, slct3, slct4, slct5, sl
 			
 			// create an image for the checkbox, and also add in HTML DOM
 			var img = document.createElement('img')
-			img.src = "D:/GitHub/SEG3125-Lab3/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
+			img.src = "https://github.com/FelixMeunier/SEG3125-Lab3/blob/master/images/"+productName.replace(/[^A-Za-z]/g, "")+".jpg"
 			s7.appendChild(img);
 			
 			// create 2 breakline nodes and add in HTML DOM
